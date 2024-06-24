@@ -107,8 +107,29 @@
         <pattern>BOOK A ROOM</pattern>
         <template>
             <think><set name="topic">booking</set></think>
-            Được thôi! Bạn muốn đặt phòng cho mấy người vậy?
+            vâng! Bạn muốn đặt phòng cho mấy người vậy?
         </template>
+    </category>
+
+
+    <category>
+        <pattern>1 người</pattern>
+        <template>vậy bạn có muốn chọn loại phòng đơn không, hoặc bạn có thể chọn loại phòng</template>
+    </category> 
+    
+    <category>
+        <pattern>2 người</pattern>
+        <template>vậy bạn có muốn chọn loại phòng đôi không, hoặc bạn có thể chọn loại phòng</template>
+    </category> 
+    
+    <category>
+        <pattern>3 người</pattern>
+        <template>vậy bạn có muốn chọn loại phòng gia đình không, hoặc bạn có thể chọn loại phòng</template>
+    </category> 
+    
+    <category>
+        <pattern>4 người</pattern>
+        <template>vậy bạn có muốn chọn loại phòng gia đình không, hoặc bạn có thể chọn loại phòng</template>
     </category>
 
     <category>
@@ -168,7 +189,7 @@
             <pattern>* NGƯỜI</pattern>
             <template>
                 <think><set name="guests"><star/></set></think>
-                OK, <get name="guests"/> người. Bạn muốn đặt phòng từ ngày nào?
+                OK, <get name="guests"/> người. Bạn muốn đặt phòng ngày nào?
             </template>
         </category>
         
@@ -176,7 +197,7 @@
             <pattern>TỪ NGÀY *</pattern>
             <template>
                 <think><set name="checkin"><star/></set></think>
-                Và bạn sẽ ở đến ngày nào?
+                 bạn sẽ ở đến ngày nào?
             </template>
         </category>
         
@@ -398,6 +419,11 @@
     <category>
         <pattern>LOẠI PHÒNG</pattern>
         <template>Chúng tôi cung cấp Phòng Đơn, Phòng Đôi, Phòng Gia đình và Phòng Suite. Bạn muốn biết thêm về loại phòng nào?</template>
+    </category>
+    
+    <category>
+        <pattern>CHO TÔI XEM LOẠI PHÒNG</pattern>
+        <template>Chúng tôi có các loại phòng: Phòng Đơn, Phòng Đôi, Phòng Gia đình và Phòng Suite. Bạn quan tâm đến loại phòng nào?</template>
     </category>
 
     <!-- Dining Options -->
